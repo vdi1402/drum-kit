@@ -1,0 +1,86 @@
+html {
+    font-size: 10px;
+    background: url('./background.jpg') no-repeat bottom center ;
+    background-size: cover;
+  }
+  
+  body,html {
+    overflow-x: hidden;
+    margin: 0;
+    height: 100vh;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  .heading{
+    position: relative;
+    left: 56rem;
+    top: 12rem;
+    font-size: 8rem;
+    color: white;
+    text-shadow: 3px 3px 3px #f60091;
+}
+  
+  .all{
+  display: flex;
+  flex-direction: row;
+  margin-left: 29rem;
+  margin-top: 27rem;
+ }
+
+ 
+  button {
+    border: .4rem solid black;
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all .07s ease;
+    text-align: center;
+  
+  background: rgba(0,0,0,0.4);
+  color: white;
+  height: 10rem;
+  font-size: 6rem;
+  width: 13rem;
+  transition: all .07s ease;
+  text-shadow: 3px 3px 3px #000000;}
+  
+  
+  .drum:hover{
+    transform: scale(1.1);
+    border-color: #f60091;
+    box-shadow: 0 0 1rem  #f60091;;
+  }
+  
+  @media only screen and (max-width: 996px){
+
+    .all{
+      margin-left: 2rem;
+    }
+    .heading{
+      left: 38rem;
+      font-size: 6rem;
+    }
+  }
+
+
+  @media only screen and (max-width: 425px){
+    .all{
+      flex-direction: column;
+      margin-top: 10rem;
+      margin-left: 17rem;
+    }
+   .heading{ font-size: 4rem;
+    left: 11rem;
+    top: 3rem;
+  }
+}
+
+@media only screen and (max-width: 330px){
+  .all{
+    margin-left: 10rem;
+  }
+  .heading{
+    left: 5rem;
+  }
+}
